@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ADIMB-rescue)(type Legacy)(uri ${KIPRJMOD}/ADIMB-rescue.lib)(options "")(descr ""))
+  (lib (name ssb5v)(type Legacy)(uri /Users/zoonman/Projects/KiCad/SSB_5V/Lib/ssb5v.lib)(options "")(descr ""))
+)

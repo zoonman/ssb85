@@ -1,0 +1,1100 @@
+EESchema Schematic File Version 4
+LIBS:ADIMB-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title "SSB85 Transceiver"
+Date "2019-08-14"
+Rev "2.0.0"
+Comp "zoonman.com"
+Comment1 "Philipp Tkachev"
+Comment2 ""
+Comment3 "https://www.zoonman.com/projects/ssb85/"
+Comment4 "SSB85 Transceiver"
+$EndDescr
+Text HLabel 1775 2325 0    50   Input ~ 0
+IF_IN
+Text HLabel 9850 2325 2    50   Input ~ 0
+IF_OUT
+$Comp
+L power:Earth #PWR064
+U 1 1 5D4FA9F1
+P 2075 2725
+F 0 "#PWR064" H 2075 2475 50  0001 C CNN
+F 1 "Earth" H 2075 2575 50  0001 C CNN
+F 2 "" H 2075 2725 50  0001 C CNN
+F 3 "~" H 2075 2725 50  0001 C CNN
+	1    2075 2725
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR080
+U 1 1 5D4FCA68
+P 9050 2725
+F 0 "#PWR080" H 9050 2475 50  0001 C CNN
+F 1 "Earth" H 9050 2575 50  0001 C CNN
+F 2 "" H 9050 2725 50  0001 C CNN
+F 3 "~" H 9050 2725 50  0001 C CNN
+	1    9050 2725
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR081
+U 1 1 5D4FD877
+P 9850 2725
+F 0 "#PWR081" H 9850 2475 50  0001 C CNN
+F 1 "Earth" H 9850 2575 50  0001 C CNN
+F 2 "" H 9850 2725 50  0001 C CNN
+F 3 "~" H 9850 2725 50  0001 C CNN
+	1    9850 2725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR065
+U 1 1 5D4FE14C
+P 2875 2725
+F 0 "#PWR065" H 2875 2475 50  0001 C CNN
+F 1 "Earth" H 2875 2575 50  0001 C CNN
+F 2 "" H 2875 2725 50  0001 C CNN
+F 3 "~" H 2875 2725 50  0001 C CNN
+	1    2875 2725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Crystal_GND2 Y2
+U 1 1 5D4FF1CD
+P 3325 2325
+F 0 "Y2" H 3325 2593 50  0000 C CNN
+F 1 "8 MHz" H 3325 2502 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U-3Pin_Vertical" H 3325 2325 50  0001 C CNN
+F 3 "~" H 3325 2325 50  0001 C CNN
+	1    3325 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C45
+U 1 1 5D5000A7
+P 3025 2325
+F 0 "C45" V 2773 2325 50  0000 C CNN
+F 1 "100" V 2864 2325 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3063 2175 50  0001 C CNN
+F 3 "~" H 3025 2325 50  0001 C CNN
+	1    3025 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C46
+U 1 1 5D501AED
+P 3600 2475
+F 0 "C46" H 3485 2429 50  0000 R CNN
+F 1 "100" H 3485 2520 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3638 2325 50  0001 C CNN
+F 3 "~" H 3600 2475 50  0001 C CNN
+	1    3600 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C47
+U 1 1 5D503411
+P 4425 2475
+F 0 "C47" H 4310 2429 50  0000 R CNN
+F 1 "100" H 4310 2520 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4463 2325 50  0001 C CNN
+F 3 "~" H 4425 2475 50  0001 C CNN
+	1    4425 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR067
+U 1 1 5D50498D
+P 3600 2625
+F 0 "#PWR067" H 3600 2375 50  0001 C CNN
+F 1 "Earth" H 3600 2475 50  0001 C CNN
+F 2 "" H 3600 2625 50  0001 C CNN
+F 3 "~" H 3600 2625 50  0001 C CNN
+	1    3600 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR066
+U 1 1 5D50521D
+P 3325 2525
+F 0 "#PWR066" H 3325 2275 50  0001 C CNN
+F 1 "Earth" H 3325 2375 50  0001 C CNN
+F 2 "" H 3325 2525 50  0001 C CNN
+F 3 "~" H 3325 2525 50  0001 C CNN
+	1    3325 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR069
+U 1 1 5D5058B5
+P 4425 2625
+F 0 "#PWR069" H 4425 2375 50  0001 C CNN
+F 1 "Earth" H 4425 2475 50  0001 C CNN
+F 2 "" H 4425 2625 50  0001 C CNN
+F 3 "~" H 4425 2625 50  0001 C CNN
+	1    4425 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR068
+U 1 1 5D505E72
+P 4125 2525
+F 0 "#PWR068" H 4125 2275 50  0001 C CNN
+F 1 "Earth" H 4125 2375 50  0001 C CNN
+F 2 "" H 4125 2525 50  0001 C CNN
+F 3 "~" H 4125 2525 50  0001 C CNN
+	1    4125 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR070
+U 1 1 5D50643B
+P 4900 2525
+F 0 "#PWR070" H 4900 2275 50  0001 C CNN
+F 1 "Earth" H 4900 2375 50  0001 C CNN
+F 2 "" H 4900 2525 50  0001 C CNN
+F 3 "~" H 4900 2525 50  0001 C CNN
+	1    4900 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 2325 3600 2325
+Connection ~ 3600 2325
+Wire Wire Line
+	3600 2325 3800 2325
+Wire Wire Line
+	4275 2325 4425 2325
+Connection ~ 4425 2325
+Wire Wire Line
+	4425 2325 4625 2325
+$Comp
+L Device:C C48
+U 1 1 5D507C92
+P 5200 2325
+F 0 "C48" V 4948 2325 50  0000 C CNN
+F 1 "100" V 5039 2325 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5238 2175 50  0001 C CNN
+F 3 "~" H 5200 2325 50  0001 C CNN
+	1    5200 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C52
+U 1 1 5D50836F
+P 6250 2325
+F 0 "C52" V 5998 2325 50  0000 C CNN
+F 1 "100" V 6089 2325 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6288 2175 50  0001 C CNN
+F 3 "~" H 6250 2325 50  0001 C CNN
+	1    6250 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C49
+U 1 1 5D508FF3
+P 5350 2475
+F 0 "C49" H 5235 2429 50  0000 R CNN
+F 1 "100" H 5235 2520 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5388 2325 50  0001 C CNN
+F 3 "~" H 5350 2475 50  0001 C CNN
+	1    5350 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR071
+U 1 1 5D509E4D
+P 5350 2625
+F 0 "#PWR071" H 5350 2375 50  0001 C CNN
+F 1 "Earth" H 5350 2475 50  0001 C CNN
+F 2 "" H 5350 2625 50  0001 C CNN
+F 3 "~" H 5350 2625 50  0001 C CNN
+	1    5350 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2325 5350 2325
+Connection ~ 5350 2325
+$Comp
+L power:Earth #PWR072
+U 1 1 5D50A805
+P 5650 2525
+F 0 "#PWR072" H 5650 2275 50  0001 C CNN
+F 1 "Earth" H 5650 2375 50  0001 C CNN
+F 2 "" H 5650 2525 50  0001 C CNN
+F 3 "~" H 5650 2525 50  0001 C CNN
+	1    5650 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND2 Y3
+U 1 1 5D50B365
+P 4125 2325
+F 0 "Y3" H 4125 2593 50  0000 C CNN
+F 1 "8 MHz" H 4125 2502 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U-3Pin_Vertical" H 4125 2325 50  0001 C CNN
+F 3 "~" H 4125 2325 50  0001 C CNN
+	1    4125 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND2 Y4
+U 1 1 5D50BC7F
+P 4900 2325
+F 0 "Y4" H 4900 2593 50  0000 C CNN
+F 1 "8 MHz" H 4900 2502 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U-3Pin_Vertical" H 4900 2325 50  0001 C CNN
+F 3 "~" H 4900 2325 50  0001 C CNN
+	1    4900 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND2 Y5
+U 1 1 5D50C74B
+P 5650 2325
+F 0 "Y5" H 5650 2593 50  0000 C CNN
+F 1 "8 MHz" H 5650 2502 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U-3Pin_Vertical" H 5650 2325 50  0001 C CNN
+F 3 "~" H 5650 2325 50  0001 C CNN
+	1    5650 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND2 Y6
+U 1 1 5D50CF4D
+P 6550 2325
+F 0 "Y6" H 6550 2593 50  0000 C CNN
+F 1 "8 MHz" H 6550 2502 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U-3Pin_Vertical" H 6550 2325 50  0001 C CNN
+F 3 "~" H 6550 2325 50  0001 C CNN
+	1    6550 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND2 Y7
+U 1 1 5D50D787
+P 7225 2325
+F 0 "Y7" H 7225 2593 50  0000 C CNN
+F 1 "8 MHz" H 7225 2502 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U-3Pin_Vertical" H 7225 2325 50  0001 C CNN
+F 3 "~" H 7225 2325 50  0001 C CNN
+	1    7225 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND2 Y8
+U 1 1 5D50E2A0
+P 7925 2325
+F 0 "Y8" H 7925 2593 50  0000 C CNN
+F 1 "8 MHz" H 7925 2502 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U-3Pin_Vertical" H 7925 2325 50  0001 C CNN
+F 3 "~" H 7925 2325 50  0001 C CNN
+	1    7925 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND2 Y9
+U 1 1 5D50EDF0
+P 8600 2325
+F 0 "Y9" H 8600 2593 50  0000 C CNN
+F 1 "8 MHz" H 8600 2502 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-U-3Pin_Vertical" H 8600 2325 50  0001 C CNN
+F 3 "~" H 8600 2325 50  0001 C CNN
+	1    8600 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C50
+U 1 1 5D513C7A
+P 5950 2325
+F 0 "C50" V 5698 2325 50  0000 C CNN
+F 1 "100" V 5789 2325 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5988 2175 50  0001 C CNN
+F 3 "~" H 5950 2325 50  0001 C CNN
+	1    5950 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C51
+U 1 1 5D515137
+P 6100 2475
+F 0 "C51" H 5985 2429 50  0000 R CNN
+F 1 "100" H 5985 2520 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6138 2325 50  0001 C CNN
+F 3 "~" H 6100 2475 50  0001 C CNN
+	1    6100 2475
+	-1   0    0    1   
+$EndComp
+Connection ~ 6100 2325
+$Comp
+L power:Earth #PWR073
+U 1 1 5D51579E
+P 6100 2625
+F 0 "#PWR073" H 6100 2375 50  0001 C CNN
+F 1 "Earth" H 6100 2475 50  0001 C CNN
+F 2 "" H 6100 2625 50  0001 C CNN
+F 3 "~" H 6100 2625 50  0001 C CNN
+	1    6100 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C54
+U 1 1 5D516872
+P 6925 2325
+F 0 "C54" V 6673 2325 50  0000 C CNN
+F 1 "100" V 6764 2325 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6963 2175 50  0001 C CNN
+F 3 "~" H 6925 2325 50  0001 C CNN
+	1    6925 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C53
+U 1 1 5D517715
+P 6775 2475
+F 0 "C53" H 6660 2429 50  0000 R CNN
+F 1 "100" H 6660 2520 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6813 2325 50  0001 C CNN
+F 3 "~" H 6775 2475 50  0001 C CNN
+	1    6775 2475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 2325 6775 2325
+Connection ~ 6775 2325
+$Comp
+L power:Earth #PWR074
+U 1 1 5D51856A
+P 6550 2525
+F 0 "#PWR074" H 6550 2275 50  0001 C CNN
+F 1 "Earth" H 6550 2375 50  0001 C CNN
+F 2 "" H 6550 2525 50  0001 C CNN
+F 3 "~" H 6550 2525 50  0001 C CNN
+	1    6550 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR075
+U 1 1 5D518AEE
+P 6775 2625
+F 0 "#PWR075" H 6775 2375 50  0001 C CNN
+F 1 "Earth" H 6775 2475 50  0001 C CNN
+F 2 "" H 6775 2625 50  0001 C CNN
+F 3 "~" H 6775 2625 50  0001 C CNN
+	1    6775 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C58
+U 1 1 5D519E62
+P 8900 2325
+F 0 "C58" V 8648 2325 50  0000 C CNN
+F 1 "100" V 8739 2325 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8938 2175 50  0001 C CNN
+F 3 "~" H 8900 2325 50  0001 C CNN
+	1    8900 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C57
+U 1 1 5D51B617
+P 8325 2475
+F 0 "C57" H 8210 2429 50  0000 R CNN
+F 1 "100" H 8210 2520 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8363 2325 50  0001 C CNN
+F 3 "~" H 8325 2475 50  0001 C CNN
+	1    8325 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C56
+U 1 1 5D51C19F
+P 7625 2325
+F 0 "C56" V 7373 2325 50  0000 C CNN
+F 1 "100" V 7464 2325 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7663 2175 50  0001 C CNN
+F 3 "~" H 7625 2325 50  0001 C CNN
+	1    7625 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C55
+U 1 1 5D51C751
+P 7450 2475
+F 0 "C55" H 7335 2429 50  0000 R CNN
+F 1 "100" H 7335 2520 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7488 2325 50  0001 C CNN
+F 3 "~" H 7450 2475 50  0001 C CNN
+	1    7450 2475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7375 2325 7450 2325
+Wire Wire Line
+	8075 2325 8150 2325
+Connection ~ 8325 2325
+Wire Wire Line
+	8325 2325 8450 2325
+$Comp
+L power:Earth #PWR076
+U 1 1 5D51D1FA
+P 7450 2625
+F 0 "#PWR076" H 7450 2375 50  0001 C CNN
+F 1 "Earth" H 7450 2475 50  0001 C CNN
+F 2 "" H 7450 2625 50  0001 C CNN
+F 3 "~" H 7450 2625 50  0001 C CNN
+	1    7450 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR077
+U 1 1 5D51DA0D
+P 7925 2525
+F 0 "#PWR077" H 7925 2275 50  0001 C CNN
+F 1 "Earth" H 7925 2375 50  0001 C CNN
+F 2 "" H 7925 2525 50  0001 C CNN
+F 3 "~" H 7925 2525 50  0001 C CNN
+	1    7925 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR078
+U 1 1 5D51E0D3
+P 8325 2625
+F 0 "#PWR078" H 8325 2375 50  0001 C CNN
+F 1 "Earth" H 8325 2475 50  0001 C CNN
+F 2 "" H 8325 2625 50  0001 C CNN
+F 3 "~" H 8325 2625 50  0001 C CNN
+	1    8325 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR079
+U 1 1 5D51E8A1
+P 8600 2525
+F 0 "#PWR079" H 8600 2275 50  0001 C CNN
+F 1 "Earth" H 8600 2375 50  0001 C CNN
+F 2 "" H 8600 2525 50  0001 C CNN
+F 3 "~" H 8600 2525 50  0001 C CNN
+	1    8600 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D526DB9
+P 1925 2325
+AR Path="/5D526DB9" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D526DB9" Ref="R14"  Part="1" 
+F 0 "R14" H 1855 2279 50  0000 R CNN
+F 1 "51" V 1925 2375 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1855 2325 50  0001 C CNN
+F 3 "~" H 1925 2325 50  0001 C CNN
+	1    1925 2325
+	0    1    1    0   
+$EndComp
+Text Notes 2650 1950 0    50   ~ 0
+Z=200 Ohm\n
+$Comp
+L Device:D_Capacitance D18
+U 1 1 5D8CC32C
+P 3850 2475
+F 0 "D18" V 3804 2554 50  0000 L CNN
+F 1 "BB148" V 3895 2554 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 3850 2475 50  0001 C CNN
+F 3 "~" H 3850 2475 50  0001 C CNN
+	1    3850 2475
+	0    1    1    0   
+$EndComp
+Connection ~ 3850 2325
+Wire Wire Line
+	3850 2325 3975 2325
+$Comp
+L Device:D_Capacitance D19
+U 1 1 5D8CDC1F
+P 4625 2475
+F 0 "D19" V 4579 2554 50  0000 L CNN
+F 1 "BB148" V 4670 2554 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 4625 2475 50  0001 C CNN
+F 3 "~" H 4625 2475 50  0001 C CNN
+	1    4625 2475
+	0    1    1    0   
+$EndComp
+Connection ~ 4625 2325
+Wire Wire Line
+	4625 2325 4750 2325
+$Comp
+L Device:D_Capacitance D21
+U 1 1 5D8CE2FC
+P 5200 1950
+F 0 "D21" H 5200 1695 50  0000 C CNN
+F 1 "BB148" H 5200 1786 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5200 1950 50  0001 C CNN
+F 3 "~" H 5200 1950 50  0001 C CNN
+	1    5200 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Capacitance D20
+U 1 1 5D8D1832
+P 5200 1575
+F 0 "D20" H 5200 1320 50  0000 C CNN
+F 1 "BB148" H 5200 1411 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5200 1575 50  0001 C CNN
+F 3 "~" H 5200 1575 50  0001 C CNN
+	1    5200 1575
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Capacitance D23
+U 1 1 5D8D22CA
+P 5950 1950
+F 0 "D23" H 5950 1695 50  0000 C CNN
+F 1 "BB148" H 5950 1786 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5950 1950 50  0001 C CNN
+F 3 "~" H 5950 1950 50  0001 C CNN
+	1    5950 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Capacitance D22
+U 1 1 5D8D2E49
+P 5950 1575
+F 0 "D22" H 5950 1320 50  0000 C CNN
+F 1 "BB148" H 5950 1411 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5950 1575 50  0001 C CNN
+F 3 "~" H 5950 1575 50  0001 C CNN
+	1    5950 1575
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Capacitance D24
+U 1 1 5D8D36F2
+P 6250 1950
+F 0 "D24" H 6250 2166 50  0000 C CNN
+F 1 "BB148" H 6250 2075 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6250 1950 50  0001 C CNN
+F 3 "~" H 6250 1950 50  0001 C CNN
+	1    6250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Capacitance D26
+U 1 1 5D8D44B7
+P 6925 1950
+F 0 "D26" H 6925 2166 50  0000 C CNN
+F 1 "BB148" H 6925 2075 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6925 1950 50  0001 C CNN
+F 3 "~" H 6925 1950 50  0001 C CNN
+	1    6925 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Capacitance D25
+U 1 1 5D8D66E6
+P 6925 1525
+F 0 "D25" H 6925 1741 50  0000 C CNN
+F 1 "BB148" H 6925 1650 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6925 1525 50  0001 C CNN
+F 3 "~" H 6925 1525 50  0001 C CNN
+	1    6925 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Capacitance D27
+U 1 1 5D8D719F
+P 7600 1525
+F 0 "D27" H 7600 1741 50  0000 C CNN
+F 1 "BB148" H 7600 1650 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7600 1525 50  0001 C CNN
+F 3 "~" H 7600 1525 50  0001 C CNN
+	1    7600 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Capacitance D28
+U 1 1 5D8D7FD3
+P 7600 1950
+F 0 "D28" H 7600 2166 50  0000 C CNN
+F 1 "BB148" H 7600 2075 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7600 1950 50  0001 C CNN
+F 3 "~" H 7600 1950 50  0001 C CNN
+	1    7600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Capacitance D29
+U 1 1 5D8D8E6A
+P 8150 2475
+F 0 "D29" V 8104 2554 50  0000 L CNN
+F 1 "BB148" V 8195 2554 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 8150 2475 50  0001 C CNN
+F 3 "~" H 8150 2475 50  0001 C CNN
+	1    8150 2475
+	0    1    1    0   
+$EndComp
+Connection ~ 8150 2325
+Wire Wire Line
+	8150 2325 8325 2325
+$Comp
+L Device:R R?
+U 1 1 5D8D9D54
+P 5350 1000
+AR Path="/5D8D9D54" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8D9D54" Ref="R31"  Part="1" 
+F 0 "R31" H 5280 954 50  0000 R CNN
+F 1 "104" V 5350 1075 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5280 1000 50  0001 C CNN
+F 3 "~" H 5350 1000 50  0001 C CNN
+	1    5350 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8DB33F
+P 4425 1000
+AR Path="/5D8DB33F" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8DB33F" Ref="R29"  Part="1" 
+F 0 "R29" H 4355 954 50  0000 R CNN
+F 1 "104" V 4425 1075 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4355 1000 50  0001 C CNN
+F 3 "~" H 4425 1000 50  0001 C CNN
+	1    4425 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8DBBCD
+P 3800 1000
+AR Path="/5D8DBBCD" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8DBBCD" Ref="R28"  Part="1" 
+F 0 "R28" H 3730 954 50  0000 R CNN
+F 1 "104" V 3800 1075 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3730 1000 50  0001 C CNN
+F 3 "~" H 3800 1000 50  0001 C CNN
+	1    3800 1000
+	-1   0    0    1   
+$EndComp
+Text GLabel 3250 850  0    50   Input ~ 0
+BW
+$Comp
+L power:Earth #PWR0110
+U 1 1 5D8DC654
+P 4625 2625
+F 0 "#PWR0110" H 4625 2375 50  0001 C CNN
+F 1 "Earth" H 4625 2475 50  0001 C CNN
+F 2 "" H 4625 2625 50  0001 C CNN
+F 3 "~" H 4625 2625 50  0001 C CNN
+	1    4625 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0109
+U 1 1 5D8DCCA5
+P 3850 2625
+F 0 "#PWR0109" H 3850 2375 50  0001 C CNN
+F 1 "Earth" H 3850 2475 50  0001 C CNN
+F 2 "" H 3850 2625 50  0001 C CNN
+F 3 "~" H 3850 2625 50  0001 C CNN
+	1    3850 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1150 3800 2325
+Connection ~ 3800 2325
+Wire Wire Line
+	3800 2325 3850 2325
+Wire Wire Line
+	3800 850  4425 850 
+Wire Wire Line
+	4425 2325 4425 1150
+Wire Wire Line
+	5350 2325 5350 1950
+Connection ~ 5350 1575
+Connection ~ 5350 1950
+Wire Wire Line
+	5350 1950 5350 1575
+Wire Wire Line
+	5050 1950 5050 2325
+Connection ~ 5050 2325
+$Comp
+L power:Earth #PWR0111
+U 1 1 5D8E0C41
+P 5050 1575
+F 0 "#PWR0111" H 5050 1325 50  0001 C CNN
+F 1 "Earth" H 5050 1425 50  0001 C CNN
+F 2 "" H 5050 1575 50  0001 C CNN
+F 3 "~" H 5050 1575 50  0001 C CNN
+	1    5050 1575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 2325 5800 1950
+Connection ~ 5800 2325
+$Comp
+L Device:R R?
+U 1 1 5D8E3702
+P 6100 1000
+AR Path="/5D8E3702" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8E3702" Ref="R33"  Part="1" 
+F 0 "R33" H 6030 954 50  0000 R CNN
+F 1 "104" V 6100 1075 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6030 1000 50  0001 C CNN
+F 3 "~" H 6100 1000 50  0001 C CNN
+	1    6100 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4425 850  5350 850 
+Connection ~ 4425 850 
+Connection ~ 5350 850 
+$Comp
+L Device:R R?
+U 1 1 5D8E49A7
+P 6775 1000
+AR Path="/5D8E49A7" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8E49A7" Ref="R35"  Part="1" 
+F 0 "R35" H 6705 954 50  0000 R CNN
+F 1 "104" V 6775 1050 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6705 1000 50  0001 C CNN
+F 3 "~" H 6775 1000 50  0001 C CNN
+	1    6775 1000
+	-1   0    0    1   
+$EndComp
+Connection ~ 6775 850 
+Connection ~ 6100 850 
+Wire Wire Line
+	6100 850  6775 850 
+Wire Wire Line
+	6100 1150 6100 1575
+Wire Wire Line
+	5350 850  6100 850 
+Connection ~ 6100 1575
+Wire Wire Line
+	6100 1575 6100 1950
+Connection ~ 6100 1950
+Wire Wire Line
+	6100 1950 6100 2300
+$Comp
+L power:Earth #PWR0113
+U 1 1 5D8E775F
+P 5800 1575
+F 0 "#PWR0113" H 5800 1325 50  0001 C CNN
+F 1 "Earth" H 5800 1425 50  0001 C CNN
+F 2 "" H 5800 1575 50  0001 C CNN
+F 3 "~" H 5800 1575 50  0001 C CNN
+	1    5800 1575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6775 2350 6775 2325
+Wire Wire Line
+	6775 2325 6775 1950
+Connection ~ 6775 1525
+Wire Wire Line
+	6775 1525 6775 1150
+Connection ~ 6775 1950
+Wire Wire Line
+	6775 1950 6775 1525
+Wire Wire Line
+	5350 1150 5350 1575
+$Comp
+L Device:R R?
+U 1 1 5D8E9588
+P 5050 2700
+AR Path="/5D8E9588" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8E9588" Ref="R30"  Part="1" 
+F 0 "R30" H 4980 2654 50  0000 R CNN
+F 1 "104" V 5050 2775 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4980 2700 50  0001 C CNN
+F 3 "~" H 5050 2700 50  0001 C CNN
+	1    5050 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8E9D44
+P 5800 2700
+AR Path="/5D8E9D44" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8E9D44" Ref="R32"  Part="1" 
+F 0 "R32" H 5730 2654 50  0000 R CNN
+F 1 "104" V 5800 2775 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5730 2700 50  0001 C CNN
+F 3 "~" H 5800 2700 50  0001 C CNN
+	1    5800 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8EA959
+P 6400 2700
+AR Path="/5D8EA959" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8EA959" Ref="R34"  Part="1" 
+F 0 "R34" H 6330 2654 50  0000 R CNN
+F 1 "104" V 6400 2775 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6330 2700 50  0001 C CNN
+F 3 "~" H 6400 2700 50  0001 C CNN
+	1    6400 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8EB0AC
+P 7075 2700
+AR Path="/5D8EB0AC" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8EB0AC" Ref="R36"  Part="1" 
+F 0 "R36" H 7005 2654 50  0000 R CNN
+F 1 "104" V 7075 2775 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7005 2700 50  0001 C CNN
+F 3 "~" H 7075 2700 50  0001 C CNN
+	1    7075 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D8EB4CC
+P 7750 2700
+AR Path="/5D8EB4CC" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8EB4CC" Ref="R38"  Part="1" 
+F 0 "R38" H 7680 2654 50  0000 R CNN
+F 1 "104" V 7750 2775 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7680 2700 50  0001 C CNN
+F 3 "~" H 7750 2700 50  0001 C CNN
+	1    7750 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 2550 6400 2325
+Connection ~ 6400 2325
+Wire Wire Line
+	6400 2325 6400 1950
+Wire Wire Line
+	5050 2325 5050 2550
+$Comp
+L power:Earth #PWR0112
+U 1 1 5D8ECFBF
+P 5050 2850
+F 0 "#PWR0112" H 5050 2600 50  0001 C CNN
+F 1 "Earth" H 5050 2700 50  0001 C CNN
+F 2 "" H 5050 2850 50  0001 C CNN
+F 3 "~" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0114
+U 1 1 5D8ED677
+P 5800 2850
+F 0 "#PWR0114" H 5800 2600 50  0001 C CNN
+F 1 "Earth" H 5800 2700 50  0001 C CNN
+F 2 "" H 5800 2850 50  0001 C CNN
+F 3 "~" H 5800 2850 50  0001 C CNN
+	1    5800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0115
+U 1 1 5D8EDC8E
+P 6400 2850
+F 0 "#PWR0115" H 6400 2600 50  0001 C CNN
+F 1 "Earth" H 6400 2700 50  0001 C CNN
+F 2 "" H 6400 2850 50  0001 C CNN
+F 3 "~" H 6400 2850 50  0001 C CNN
+	1    6400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0117
+U 1 1 5D8EE163
+P 7075 2850
+F 0 "#PWR0117" H 7075 2600 50  0001 C CNN
+F 1 "Earth" H 7075 2700 50  0001 C CNN
+F 2 "" H 7075 2850 50  0001 C CNN
+F 3 "~" H 7075 2850 50  0001 C CNN
+	1    7075 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0119
+U 1 1 5D8EE804
+P 7750 2850
+F 0 "#PWR0119" H 7750 2600 50  0001 C CNN
+F 1 "Earth" H 7750 2700 50  0001 C CNN
+F 2 "" H 7750 2850 50  0001 C CNN
+F 3 "~" H 7750 2850 50  0001 C CNN
+	1    7750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2550 7750 2325
+Wire Wire Line
+	7450 1950 7450 2325
+Connection ~ 7450 2325
+Wire Wire Line
+	7450 2325 7475 2325
+$Comp
+L power:Earth #PWR0120
+U 1 1 5D8F1616
+P 8150 2625
+F 0 "#PWR0120" H 8150 2375 50  0001 C CNN
+F 1 "Earth" H 8150 2475 50  0001 C CNN
+F 2 "" H 8150 2625 50  0001 C CNN
+F 3 "~" H 8150 2625 50  0001 C CNN
+	1    8150 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 1950 7075 2325
+Connection ~ 7075 2325
+Wire Wire Line
+	7075 2325 7075 2550
+Wire Wire Line
+	7450 1525 7450 1950
+Connection ~ 7450 1950
+$Comp
+L Device:R R?
+U 1 1 5D8F4B6F
+P 7450 1000
+AR Path="/5D8F4B6F" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8F4B6F" Ref="R37"  Part="1" 
+F 0 "R37" H 7380 954 50  0000 R CNN
+F 1 "104" V 7450 1075 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7380 1000 50  0001 C CNN
+F 3 "~" H 7450 1000 50  0001 C CNN
+	1    7450 1000
+	-1   0    0    1   
+$EndComp
+Connection ~ 7450 850 
+Wire Wire Line
+	7450 850  8150 850 
+$Comp
+L power:Earth #PWR0116
+U 1 1 5D8F549F
+P 7075 1525
+F 0 "#PWR0116" H 7075 1275 50  0001 C CNN
+F 1 "Earth" H 7075 1375 50  0001 C CNN
+F 2 "" H 7075 1525 50  0001 C CNN
+F 3 "~" H 7075 1525 50  0001 C CNN
+	1    7075 1525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0118
+U 1 1 5D8F61EF
+P 7750 1525
+F 0 "#PWR0118" H 7750 1275 50  0001 C CNN
+F 1 "Earth" H 7750 1375 50  0001 C CNN
+F 2 "" H 7750 1525 50  0001 C CNN
+F 3 "~" H 7750 1525 50  0001 C CNN
+	1    7750 1525
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 1150 7450 1525
+Wire Wire Line
+	6775 850  7450 850 
+Connection ~ 7450 1525
+Wire Wire Line
+	7750 2325 7775 2325
+Connection ~ 7750 2325
+Wire Wire Line
+	7750 2325 7750 1950
+Connection ~ 7775 2325
+$Comp
+L Device:R R?
+U 1 1 5D8F8251
+P 8150 1000
+AR Path="/5D8F8251" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8F8251" Ref="R39"  Part="1" 
+F 0 "R39" H 8080 954 50  0000 R CNN
+F 1 "104" V 8150 1075 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8080 1000 50  0001 C CNN
+F 3 "~" H 8150 1000 50  0001 C CNN
+	1    8150 1000
+	-1   0    0    1   
+$EndComp
+Connection ~ 8150 850 
+Wire Wire Line
+	8150 850  8325 850 
+Wire Wire Line
+	8150 1150 8150 2325
+$Comp
+L Device:C C108
+U 1 1 5D8FB8F6
+P 8475 850
+F 0 "C108" V 8223 850 50  0000 C CNN
+F 1 "104" V 8314 850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8513 700 50  0001 C CNN
+F 3 "~" H 8475 850 50  0001 C CNN
+	1    8475 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0121
+U 1 1 5D8FBE32
+P 8625 850
+F 0 "#PWR0121" H 8625 600 50  0001 C CNN
+F 1 "Earth" H 8625 700 50  0001 C CNN
+F 2 "" H 8625 850 50  0001 C CNN
+F 3 "~" H 8625 850 50  0001 C CNN
+	1    8625 850 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 2550 5800 2325
+$Comp
+L Device:R R?
+U 1 1 5D8FDF63
+P 3400 850
+AR Path="/5D8FDF63" Ref="R?"  Part="1" 
+AR Path="/5D4A87C8/5D8FDF63" Ref="R27"  Part="1" 
+F 0 "R27" H 3330 804 50  0000 R CNN
+F 1 "104" V 3400 925 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 850 50  0001 C CNN
+F 3 "~" H 3400 850 50  0001 C CNN
+	1    3400 850 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 850  3800 850 
+Connection ~ 3800 850 
+$Comp
+L power:Earth #PWR0122
+U 1 1 5D901780
+P 7225 2525
+F 0 "#PWR0122" H 7225 2275 50  0001 C CNN
+F 1 "Earth" H 7225 2375 50  0001 C CNN
+F 2 "" H 7225 2525 50  0001 C CNN
+F 3 "~" H 7225 2525 50  0001 C CNN
+	1    7225 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Transformer_1P_SS T1
+U 1 1 5D58E8FB
+P 2475 2525
+F 0 "T1" H 2475 2906 50  0000 C CNN
+F 1 "MABAES0061" H 2475 2815 50  0000 C CNN
+F 2 "Transformer_SMD:Transformer_MACOM_SM-22" H 2475 2525 50  0001 C CNN
+F 3 "~" H 2475 2525 50  0001 C CNN
+	1    2475 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Transformer_1P_SS T2
+U 1 1 5D597295
+P 9450 2525
+F 0 "T2" H 9450 2100 50  0000 C CNN
+F 1 "MABAES0061" H 9450 2191 50  0000 C CNN
+F 2 "Transformer_SMD:Transformer_MACOM_SM-22" H 9450 2525 50  0001 C CNN
+F 3 "~" H 9450 2525 50  0001 C CNN
+	1    9450 2525
+	-1   0    0    1   
+$EndComp
+NoConn ~ 9050 2525
+NoConn ~ 2875 2525
+Text Notes 725  6675 0    50   ~ 0
+https://www.changpuak.ch/electronics/Quartz_Crystal_Filter_Designer_1.php
+$EndSCHEMATC

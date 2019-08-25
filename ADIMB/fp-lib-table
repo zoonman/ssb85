@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SSB85)(type KiCad)(uri /Users/zoonman/Projects/KiCad/SSB85/SSB85.pretty)(options "")(descr ""))
+)

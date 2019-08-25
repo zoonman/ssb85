@@ -1,0 +1,387 @@
+EESchema Schematic File Version 4
+LIBS:ADIMB-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title "SSB85 Transceiver"
+Date "2019-08-14"
+Rev "2.0.0"
+Comp "zoonman.com"
+Comment1 "Philipp Tkachev"
+Comment2 ""
+Comment3 "https://www.zoonman.com/projects/ssb85/"
+Comment4 "SSB85 Transceiver"
+$EndDescr
+Text HLabel 6775 2975 2    50   Input ~ 0
+AudioOut
+$Comp
+L Amplifier_Audio:SSM2167 U9
+U 1 1 5D566D1A
+P 4450 3175
+F 0 "U9" H 4450 3856 50  0000 C CNN
+F 1 "SSM2167" H 4450 3765 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 4450 3175 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/SSM2167.pdf" H 4100 3625 50  0001 C CNN
+	1    4450 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0126
+U 1 1 5D56802A
+P 4450 3675
+F 0 "#PWR0126" H 4450 3425 50  0001 C CNN
+F 1 "Earth" H 4450 3525 50  0001 C CNN
+F 2 "" H 4450 3675 50  0001 C CNN
+F 3 "~" H 4450 3675 50  0001 C CNN
+	1    4450 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C110
+U 1 1 5D568D6D
+P 3775 3125
+F 0 "C110" H 3890 3171 50  0000 L CNN
+F 1 "106" H 3890 3080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3813 2975 50  0001 C CNN
+F 3 "~" H 3775 3125 50  0001 C CNN
+	1    3775 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C109
+U 1 1 5D569E22
+P 3575 2875
+F 0 "C109" V 3323 2875 50  0000 C CNN
+F 1 "105" V 3414 2875 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3613 2725 50  0001 C CNN
+F 3 "~" H 3575 2875 50  0001 C CNN
+	1    3575 2875
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C114
+U 1 1 5D56A664
+P 5625 2975
+F 0 "C114" V 5373 2975 50  0000 C CNN
+F 1 "105" V 5464 2975 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5663 2825 50  0001 C CNN
+F 3 "~" H 5625 2975 50  0001 C CNN
+	1    5625 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 5D56B679
+P 5000 3375
+F 0 "R43" V 4793 3375 50  0000 C CNN
+F 1 "103" V 5000 3375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4930 3375 50  0001 C CNN
+F 3 "~" H 5000 3375 50  0001 C CNN
+	1    5000 3375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C113
+U 1 1 5D56BD51
+P 5450 3325
+F 0 "C113" H 5565 3371 50  0000 L CNN
+F 1 "106" H 5565 3280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5488 3175 50  0001 C CNN
+F 3 "~" H 5450 3325 50  0001 C CNN
+	1    5450 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 5D56D7DD
+P 5000 3275
+F 0 "R42" V 4793 3275 50  0000 C CNN
+F 1 "202" V 5000 3275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4930 3275 50  0001 C CNN
+F 3 "~" H 5000 3275 50  0001 C CNN
+	1    5000 3275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 3375 5150 3275
+Wire Wire Line
+	5150 2675 4450 2675
+Connection ~ 5150 3275
+Wire Wire Line
+	5150 3275 5150 2675
+Wire Wire Line
+	4850 3175 5450 3175
+$Comp
+L power:Earth #PWR0128
+U 1 1 5D57208B
+P 5450 3475
+F 0 "#PWR0128" H 5450 3225 50  0001 C CNN
+F 1 "Earth" H 5450 3325 50  0001 C CNN
+F 2 "" H 5450 3475 50  0001 C CNN
+F 3 "~" H 5450 3475 50  0001 C CNN
+	1    5450 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3275 3775 3275
+Wire Wire Line
+	3775 2975 4050 2975
+Wire Wire Line
+	3725 2875 4050 2875
+Wire Wire Line
+	4850 2975 5475 2975
+$Comp
+L Device:C C111
+U 1 1 5D5730F4
+P 4050 3625
+F 0 "C111" H 3935 3579 50  0000 R CNN
+F 1 "104" H 3935 3670 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 3475 50  0001 C CNN
+F 3 "~" H 4050 3625 50  0001 C CNN
+	1    4050 3625
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 5D56F38C
+P 3900 3475
+F 0 "R40" V 3693 3475 50  0000 C CNN
+F 1 "103" V 3900 3475 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3830 3475 50  0001 C CNN
+F 3 "~" H 3900 3475 50  0001 C CNN
+	1    3900 3475
+	0    1    1    0   
+$EndComp
+Connection ~ 4050 3475
+$Comp
+L power:Earth #PWR0125
+U 1 1 5D57566D
+P 4050 3775
+F 0 "#PWR0125" H 4050 3525 50  0001 C CNN
+F 1 "Earth" H 4050 3625 50  0001 C CNN
+F 2 "" H 4050 3775 50  0001 C CNN
+F 3 "~" H 4050 3775 50  0001 C CNN
+	1    4050 3775
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 3475 0    50   Input ~ 0
+TX+5V
+Text GLabel 5150 2200 0    50   Input ~ 0
++5V
+Wire Wire Line
+	5150 2675 5150 2200
+Connection ~ 5150 2675
+$Comp
+L Device:C C112
+U 1 1 5D5763AC
+P 5300 2675
+F 0 "C112" V 5552 2675 50  0000 C CNN
+F 1 "104" V 5461 2675 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5338 2525 50  0001 C CNN
+F 3 "~" H 5300 2675 50  0001 C CNN
+	1    5300 2675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0127
+U 1 1 5D5771E7
+P 5450 2675
+F 0 "#PWR0127" H 5450 2425 50  0001 C CNN
+F 1 "Earth" H 5450 2525 50  0001 C CNN
+F 2 "" H 5450 2675 50  0001 C CNN
+F 3 "~" H 5450 2675 50  0001 C CNN
+	1    5450 2675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:AudioJack3_Ground_SwitchTR J8
+U 1 1 5D5793EE
+P 2825 2875
+F 0 "J8" H 2807 3200 50  0000 C CNN
+F 1 "TangentMic" H 2807 3109 50  0000 C CNN
+F 2 "SSB85:Jack_3.5mm_PJ342_Horizontal2" H 2825 2875 50  0001 C CNN
+F 3 "~" H 2825 2875 50  0001 C CNN
+	1    2825 2875
+	1    0    0    -1  
+$EndComp
+Text GLabel 2825 3600 0    50   Input ~ 0
+TX_PIN
+Wire Wire Line
+	3225 2775 3225 3375
+Wire Wire Line
+	3225 3600 2825 3600
+Wire Wire Line
+	3025 2775 3225 2775
+Wire Wire Line
+	3025 3075 3025 3175
+Wire Wire Line
+	3025 2875 3025 2975
+Wire Wire Line
+	3025 2875 3300 2875
+Connection ~ 3025 2875
+$Comp
+L Device:R R41
+U 1 1 5D57C525
+P 4000 2675
+F 0 "R41" V 3793 2675 50  0000 C CNN
+F 1 "102" V 4000 2675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3930 2675 50  0001 C CNN
+F 3 "~" H 4000 2675 50  0001 C CNN
+	1    4000 2675
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 2675 4150 2675
+Connection ~ 4450 2675
+Wire Wire Line
+	3850 2675 3750 2675
+Connection ~ 3025 3075
+$Comp
+L Connector:AudioJack3_Ground_SwitchTR J9
+U 1 1 5D581402
+P 6925 3625
+F 0 "J9" H 6645 3493 50  0000 R CNN
+F 1 "LineIn" H 6645 3402 50  0000 R CNN
+F 2 "SSB85:Jack_3.5mm_PJ342_Horizontal2" H 6925 3625 50  0001 C CNN
+F 3 "~" H 6925 3625 50  0001 C CNN
+	1    6925 3625
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP4
+U 1 1 5D5844D4
+P 6075 2975
+F 0 "JP4" H 6075 3239 50  0000 C CNN
+F 1 "MicConn" H 6075 3148 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6075 2975 50  0001 C CNN
+F 3 "~" H 6075 2975 50  0001 C CNN
+	1    6075 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0129
+U 1 1 5D586DB1
+P 6925 4125
+F 0 "#PWR0129" H 6925 3875 50  0001 C CNN
+F 1 "Earth" H 6925 3975 50  0001 C CNN
+F 2 "" H 6925 4125 50  0001 C CNN
+F 3 "~" H 6925 4125 50  0001 C CNN
+	1    6925 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0130
+U 1 1 5D5876D7
+P 6725 3525
+F 0 "#PWR0130" H 6725 3275 50  0001 C CNN
+F 1 "Earth" H 6725 3375 50  0001 C CNN
+F 2 "" H 6725 3525 50  0001 C CNN
+F 3 "~" H 6725 3525 50  0001 C CNN
+	1    6725 3525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6725 3625 6375 3625
+Wire Wire Line
+	6375 3625 6375 2975
+Wire Wire Line
+	6775 2975 6675 2975
+Connection ~ 6375 2975
+Wire Wire Line
+	6725 3825 6375 3825
+Wire Wire Line
+	6375 3825 6375 3625
+Connection ~ 6375 3625
+Wire Wire Line
+	5775 2975 5775 3925
+Wire Wire Line
+	5775 3925 6575 3925
+Connection ~ 5775 2975
+Wire Wire Line
+	6725 3725 6575 3725
+Wire Wire Line
+	6575 3725 6575 3925
+Connection ~ 6575 3925
+Wire Wire Line
+	6575 3925 6725 3925
+$Comp
+L Device:C C115
+U 1 1 5D58B00D
+P 6525 2975
+F 0 "C115" V 6273 2975 50  0000 C CNN
+F 1 "105" V 6364 2975 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6563 2825 50  0001 C CNN
+F 3 "~" H 6525 2975 50  0001 C CNN
+	1    6525 2975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2825 3375 3225 3375
+Connection ~ 3225 3375
+Wire Wire Line
+	3225 3375 3225 3600
+$Comp
+L Device:R R67
+U 1 1 5D6A91BD
+P 3450 2675
+F 0 "R67" V 3243 2675 50  0000 C CNN
+F 1 "103" V 3450 2675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3380 2675 50  0001 C CNN
+F 3 "~" H 3450 2675 50  0001 C CNN
+	1    3450 2675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C148
+U 1 1 5D6A99BA
+P 3750 2525
+F 0 "C148" H 3865 2571 50  0000 L CNN
+F 1 "106" H 3865 2480 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3788 2375 50  0001 C CNN
+F 3 "~" H 3750 2525 50  0001 C CNN
+	1    3750 2525
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 2675
+Wire Wire Line
+	3750 2675 3600 2675
+$Comp
+L power:Earth #PWR0171
+U 1 1 5D6A9FDE
+P 3750 2375
+F 0 "#PWR0171" H 3750 2125 50  0001 C CNN
+F 1 "Earth" H 3750 2225 50  0001 C CNN
+F 2 "" H 3750 2375 50  0001 C CNN
+F 3 "~" H 3750 2375 50  0001 C CNN
+	1    3750 2375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 2675 3300 2875
+Connection ~ 3300 2875
+Wire Wire Line
+	3300 2875 3425 2875
+$Comp
+L Device:R R68
+U 1 1 5D6AE4B0
+P 3450 2150
+F 0 "R68" V 3243 2150 50  0000 C CNN
+F 1 "102" V 3450 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3380 2150 50  0001 C CNN
+F 3 "~" H 3450 2150 50  0001 C CNN
+	1    3450 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 2675 4450 2150
+Wire Wire Line
+	4450 2150 3600 2150
+Wire Wire Line
+	3300 2150 3125 2150
+Wire Wire Line
+	3125 2150 3125 3075
+Wire Wire Line
+	3125 3075 3025 3075
+$EndSCHEMATC
